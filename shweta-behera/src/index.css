@@ -13,7 +13,7 @@ body {
 .menu-btn {
   @apply w-10 h-10 grid place-items-center bg-zinc-50/10 
   rounded-xl ring-inset ring-1 ring-zinc-50/10 backdrop-blur-2xl
-  hover:bg-zinc-50/[0.02] transition-transform transition-colors active:scale-95;
+  hover:bg-zinc-50/[0.02] transition-transform transition-colors active:scale-95
 }
 
 /* Navbar */
@@ -24,6 +24,8 @@ body {
   blur-sm invisible opacity-0 transition-[opacity,transform,filter] duration-300 
   md:static md:flex md:items-center md:mt-0 md:opacity-100 
   md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
+
+  @apply md:static md:flex md:items-center hidden md:blur-0 md:scale-100 md:visible;
 }
 
 .navbar.active {
