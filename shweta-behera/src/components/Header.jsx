@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-transparent">
+    <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-zinc-900">
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,9fr,1fr]">
         {/* Logo */}
         <h1>
