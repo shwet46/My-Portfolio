@@ -10,7 +10,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-          'navFont' : ['Roboto Condensed', 'sans-serif', 'monospace']
+          'navFont' : ['Roboto Condensed', 'sans-serif', 'monospace'],
+          'secFont' : ['Courier Prime', 'sans-serif', 'monospace'],
+          'btnFont' : ['Ubuntu', 'sans-serif', 'monospace']
       }
     },
   },

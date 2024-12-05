@@ -44,3 +44,34 @@ body {
 .active-box {
   @apply absolute bg-zinc-600 rounded-lg -z-10 transition-[top,left,width,height] duration-500;
 }
+
+.container {
+  @apply px-8 mx-auto lg:px-8 xl:max-w-6xl ring-inset ring-2 ring-zinc-50/10 rounded-xl py-12;
+}
+
+.headline-1 {
+  @apply text-5xl leading-tight lg:text-[55px] max-w-[20ch] text-left;
+}
+
+.headline-2 {
+  @apply text-3xl leading-tight lg:text-[28px] max-w-[30ch] text-left;
+}
+
+@screen lg {
+  .container {
+    @apply text-left;
+  }
+}
+
+.btn {
+  @apply max-w-max h-10 flex items-center gap-2 px-4 rounded-xl font-btnFont text-xl
+  ring-1 ring-zinc-50/5 ring-inset transition-[background-color] bg-fuchsia-600/50;
+}
+
+.btn .material-symbols-rounded {
+  @apply text-[22px];
+}
+
+.btn:has(.material-symbols-rounded) {
+  @apply pr-3;
+}
