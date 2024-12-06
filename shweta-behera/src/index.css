@@ -48,13 +48,16 @@ body {
 .container {
   @apply px-8 mx-auto lg:px-8 xl:max-w-6xl ring-inset ring-2 ring-zinc-50/10 rounded-xl py-12;
 }
+.container {
+  @apply px-8 mx-auto lg:px-8 xl:max-w-6xl py-12;
+}
 
 .headline-1 {
-  @apply text-5xl leading-tight lg:text-[55px] max-w-[20ch] text-left;
+  @apply md:text-5xl text-3xl leading-tight lg:text-[50px] max-w-[20ch] text-left;
 }
 
 .headline-2 {
-  @apply text-3xl leading-tight lg:text-[28px] max-w-[30ch] text-left;
+  @apply md:text-3xl text-xl leading-tight lg:text-[26px] max-w-[30ch] text-left;
 }
 
 @screen lg {
