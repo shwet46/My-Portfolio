@@ -26,16 +26,16 @@ const Hero = () => {
               {"<About me/>"}
             </div>
           </div>
-          <h2 className="headline-1 mt-5 font-secFont">
+          <h2 className="headline-1 mt-5 font-vsFont">
             I'm Shweta
           </h2>
-          <h3 className="headline-2 mt-3 font-secFont text-cyan-600">
+          <h3 className="headline-2 mt-3 font-vsFont text-cyan-600">
               currently an engineering student pursuing Bachelor in Technology.
           </h3>
-          <h3 className="headline-2 mt-4 mb-4 font-secFont text-yellow-600">
+          <h3 className="headline-2 mt-4 mb-4 font-vsFont text-yellow-600">
               Technical skills:
           </h3>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-lg mb-8 font-secFont">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-lg mb-8 font-vsFont">
           {techs.map((tech, index) => (
             <li key={index} className="flex items-center text-stone-400 gap-3">
               <span className="text-xl">◆</span>

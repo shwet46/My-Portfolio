@@ -12,7 +12,8 @@ export default {
       fontFamily: {
           'navFont' : ['Roboto Condensed', 'sans-serif', 'monospace'],
           'secFont' : ['Courier Prime', 'sans-serif', 'monospace'],
-          'btnFont' : ['Ubuntu', 'sans-serif', 'monospace']
+          'btnFont' : ['Ubuntu', 'sans-serif', 'monospace'],
+          'vsFont' : ['Fira Code', 'sans-serif', 'monospace']
       }
     },
   },
