@@ -19,7 +19,7 @@ body {
 /* Navbar */
 
 .navbar {
-  @apply absolute left-0 top-full mt-2 min-w-40 p-2 bg-zinc-900 font-navFont
+  @apply absolute left-0 top-full mt-2 min-w-40 p-2 bg-transparent font-navFont
   rounded-2xl ring-inset ring-1 ring-transparent scale-90 
   blur-sm invisible opacity-0 transition-[opacity,transform,filter] duration-300 
   md:static md:flex md:items-center md:mt-0 md:opacity-100 
@@ -57,7 +57,7 @@ body {
 }
 
 .headline-2 {
-  @apply md:text-3xl text-xl leading-tight lg:text-[26px] max-w-[30ch] text-left;
+  @apply md:text-2xl text-xl leading-tight lg:text-[20px] max-w-[45ch] text-left;
 }
 
 @screen lg {
