@@ -23,7 +23,7 @@ const About = () => {
             </figure>
            
           </div>
-          <h2 className="headline-1 mt-5 font-vsFont">
+          <h2 className="headline-1 mt-2 font-vsFont">
             I'm Shweta Behera
           </h2>
           <h3 className="text-[20px] mt-4 text-left text-stone-400 tracking-wide font-vsFont">

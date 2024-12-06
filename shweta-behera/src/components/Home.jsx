@@ -53,7 +53,7 @@ const Home = () => {
   }, [displayedText, index, textArray]);
 
   return (
-    <section id="home" className="pt-28 lg:pt-36">
+    <section id="home" className="pt-28 lg:pt-32">
       <div className="container-h h-[600px] flex items-center lg:gap-2 flex-col md:mb-6">
         <figure className="w-full max-w-[310px]">
           <img
