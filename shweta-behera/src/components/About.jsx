@@ -11,7 +11,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="pt-28 lg:pt-32">
+    <section id="about" className="pt-24 lg:pt-28">
             <div className="flex font-secFont left-0 items-start py-4 px-4 mx-2 text-zinc-400 md:text-3xl text-2xl tracking-wide">
               {"<About me/>"}
             </div>

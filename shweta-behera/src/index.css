@@ -33,7 +33,7 @@ body {
 }
 
 .nav-link {
-  @apply grid items-center h-8 px-4 text-sm font-navFont uppercase 
+  @apply grid items-center h-8 px-4 text-sm font-vsFont font-medium uppercase 
   tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors;
 }
 
@@ -50,6 +50,10 @@ body {
 }
 .container {
   @apply px-8 mx-auto lg:px-8 xl:max-w-6xl py-12;
+}
+
+.container-1{
+  @apply px-8 mx-auto lg:px-8  xl:max-w-6xl py-8;
 }
 
 .headline-1 {
