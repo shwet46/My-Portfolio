@@ -82,3 +82,7 @@ body {
 .btn:has(.material-symbols-rounded) {
   @apply pr-3;
 }
+
+.title-1{
+  @apply text-[22px] font-normal font-vsFont
+}

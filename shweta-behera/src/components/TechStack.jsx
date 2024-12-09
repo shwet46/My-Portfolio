@@ -66,7 +66,7 @@ const TechStack = () => {
       {"<Tech stack/>"}
         </div>
         <div className="container-1">
-          <h3 className=" font-vsFont mb-6 items-center text-purple-600 text-2xl text-center">
+          <h3 className=" font-vsFont mb-6 items-center text-purple-600 md:text-2xl text-center">
             These are some Tools and Technologies I have worked with.
           </h3>
           <div className="grid gap-3 font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
@@ -84,7 +84,7 @@ const TechStack = () => {
         </div>
 
         <div className="container-1">
-          <h3 className=" font-vsFont mb-6 items-center text-sky-600 text-2xl text-center">
+          <h3 className=" font-vsFont mb-6 items-center text-sky-600 md:text-2xl text-center">
             Languages I'm proficient with.
           </h3>
           <div className="grid gap-3 font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
