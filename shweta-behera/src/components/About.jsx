@@ -26,8 +26,8 @@ const About = () => {
           <h2 className="headline-1 mt-2 font-vsFont">
             I'm Shweta Behera
           </h2>
-          <h3 className="text-[20px] mt-4 text-left text-stone-400 tracking-wide font-vsFont">
-              <italic className="italic text-yellow-300">cd  </italic> India
+          <h3 className="text-[20px] mt-4 text-left text-stone-400 font-vsFont">
+            <span className="material-symbols-rounded text-yellow-300 text-[16px]">location_on</span> India
           </h3>
           <h3 className="headline-2 mt-3 font-vsFont text-cyan-600">
               currently an engineering student pursuing Bachelor in Technology.
@@ -50,7 +50,7 @@ const About = () => {
         </div>
 
         <div className="hidden lg:block">
-          <figure className="w-full max-w-[380px] ml-auto shadow-md hover:shadow-lg">
+          <figure className="w-full max-w-[380px] ml-auto hover:shadow-lg">
             <img src="photos/sb5.jpg" alt="" width={356} height={500} className="w-full" />
           </figure>
         </div>

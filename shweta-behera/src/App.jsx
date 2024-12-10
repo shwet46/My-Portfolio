@@ -5,6 +5,8 @@ import Home from './components/Home'
 import Coding from './components/Coding'
 import Projects from './components/Projects'
 import TechStack from './components/TechStack'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       <Coding/>
       <TechStack/>
       <Projects/>
+      <Contact/>
     </main>
+    <Footer/>
     </>
   )
 }

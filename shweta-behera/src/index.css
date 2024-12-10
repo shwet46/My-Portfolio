@@ -84,5 +84,5 @@ body {
 }
 
 .title-1{
-  @apply text-[22px] font-normal font-vsFont
+  @apply text-[22px] font-normal font-vsFont text-start
 }

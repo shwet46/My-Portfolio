@@ -61,7 +61,7 @@ const TechStack = () => {
   ];
 
   return (
-      <section id="tech" className="section">
+      <section id="tech" className="pt-16 pb-4 section">
         <div className="flex font-secFont left-0 items-start py-4 px-4 mx-2 text-zinc-400 md:text-3xl text-2xl tracking-wide">
       {"<Tech stack/>"}
         </div>

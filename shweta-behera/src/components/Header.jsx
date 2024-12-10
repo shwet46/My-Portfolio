@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header id="" className="fixed top-0 left-0 w-full h-16 flex items-center z-40 bg-zinc-900">
+    <header id="" className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-zinc-900">
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,9fr,1fr]">
         {/* Logo */}
         <h1>
@@ -28,6 +28,8 @@ const Header = () => {
         <div className="relative md:justify-self-start">
           <Navbar navOpen={navOpen} />
         </div>
+
+        <a href="#contact" className="font-vsFont max-md:hidden bg-yellow-600 py-2 rounded-lg">Contact me</a>
 
        <div>
 
