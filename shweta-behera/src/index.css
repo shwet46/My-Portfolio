@@ -86,3 +86,7 @@ body {
 .title-1{
   @apply text-[22px] font-normal font-vsFont text-start
 }
+
+.reveal-up{
+  @apply translate-y-20 opacity-0
+}

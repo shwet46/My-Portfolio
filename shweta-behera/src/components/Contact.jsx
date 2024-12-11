@@ -44,14 +44,14 @@ const Contact = () => {
     <section id="contact" className="section">
         <div className=" flex text-center items-center flex-col">
             <div className=" font-vsFont mb-12 mt-6 lg:mb-0 items-center lg:flex lg:flex-col">
-               <h2 className="md:text-3xl text-2xl text-normal">Connect with me</h2> 
-               <p className="text-md my-4 text-normal text-zinc-400">Let’s stay connected! Reach out to me via the social links below.</p>
-               <div className="flex items-center gap-2 mt-auto">
+               <h2 className="md:text-3xl text-2xl text-normal reveal-up">Connect with me</h2> 
+               <p className="text-md my-4 text-normal text-zinc-400 reveal-up">Let’s stay connected! Reach out to me via the social links below.</p>
+               <div className="flex items-center gap-2 mt-auto reveal-up">
                 {socialLinks.map(({href, icon}, key) => (
                     <a key={key}
                     href={href}
                     target="_blank"
-                    className="md:w-8 md:h-8 w-6 h-6 grid place-items-center mx-4 my-4"
+                    className="md:w-8 md:h-8 w-6 h-6 grid place-items-center mx-4 my-4 reveal-up"
                     >{icon}</a>
                 ))}
                </div>

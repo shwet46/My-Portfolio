@@ -12,10 +12,10 @@ const About = () => {
 
   return (
     <section id="about" className="pt-24 lg:pt-28">
-            <div className="flex font-secFont left-0 items-start py-4 px-4 mx-2 text-zinc-400 md:text-3xl text-2xl tracking-wide">
+            <div className="flex font-secFont left-0 items-start py-4 px-4 mx-2 text-zinc-400 md:text-3xl text-2xl tracking-wide reveal-up">
               {"<About me/>"}
             </div>
-      <div className="container lg:grid bg-zinc-800/50 lg:grid-cols-2 items-start lg:gap-8">
+      <div className="container lg:grid bg-zinc-800/50 lg:grid-cols-2 items-start lg:gap-8 reveal-up">
         <div>
           <div className="flex items-start">
             <figure className="">
@@ -23,35 +23,35 @@ const About = () => {
             </figure>
            
           </div>
-          <h2 className="headline-1 mt-2 font-vsFont">
+          <h2 className="headline-1 mt-2 font-vsFont reveal-up">
             I'm Shweta Behera
           </h2>
-          <h3 className="text-[20px] mt-4 text-left text-stone-400 font-vsFont">
+          <h3 className="text-[20px] mt-4 text-left text-stone-400 font-vsFont reveal-up">
             <span className="material-symbols-rounded text-yellow-300 text-[16px]">location_on</span> India
           </h3>
-          <h3 className="headline-2 mt-3 font-vsFont text-cyan-600">
+          <h3 className="headline-2 mt-3 font-vsFont text-cyan-600 reveal-up">
               currently an engineering student pursuing Bachelor in Technology.
               I have worked with various web development technologies.
           </h3>
-          <h3 className="headline-2 mt-4 mb-4 font-vsFont text-emerald-500">
+          <h3 className="headline-2 mt-4 mb-4 font-vsFont text-emerald-500 reveal-up">
               Things I do:
           </h3>
           <ul className="grid grid-cols-1 gap-2 text-lg mb-8 font-vsFont">
           {techs.map((tech, index) => (
-            <li key={index} className="flex items-center text-emerald-500 gap-3">
+            <li key={index} className="flex items-center text-emerald-500 gap-3 reveal-up">
               <span className="text-xl">≫</span>
               {tech}
             </li>
           ))}
         </ul>
-          <div className="flex items-center gap-3">
-            <Button label="Mail me" icon="mail" />
+          <div className="flex items-center gap-3 reveal-up">
+            <a href="mailto:shwetabehera444@gmail.com"><Button label="Mail me" icon="mail" /></a>
           </div>
         </div>
 
         <div className="hidden lg:block">
           <figure className="w-full max-w-[380px] ml-auto hover:shadow-lg">
-            <img src="photos/sb5.jpg" alt="" width={356} height={500} className="w-full" />
+            <img src="photos/sb5.jpg" alt="" width={356} height={500} className="w-full reveal-up" />
           </figure>
         </div>
       </div>

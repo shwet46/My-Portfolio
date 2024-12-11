@@ -62,14 +62,14 @@ const TechStack = () => {
 
   return (
       <section id="tech" className="pt-16 pb-4 section">
-        <div className="flex font-secFont left-0 items-start py-4 px-4 mx-2 text-zinc-400 md:text-3xl text-2xl tracking-wide">
+        <div className="flex font-secFont left-0 reveal-up items-start py-4 px-4 mx-2 text-zinc-400 md:text-3xl text-2xl tracking-wide">
       {"<Tech stack/>"}
         </div>
         <div className="container-1">
-          <h3 className=" font-vsFont mb-6 items-center text-purple-600 md:text-2xl text-center">
+          <h3 className=" font-vsFont mb-6 items-center text-purple-600 md:text-2xl text-center reveal-up">
             These are some Tools and Technologies I have worked with.
           </h3>
-          <div className="grid gap-3 font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
+          <div className="grid gap-3 font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))] reveal-up">
               {
                 skillItem.map(({imgSrc, label, desc}, key) => (
                   <TechCard 
@@ -77,6 +77,7 @@ const TechStack = () => {
                   imgSrc={imgSrc}
                   label={label}
                   desc={desc}
+                  classes="reveal-up"
                   />
                 ))
               }
@@ -84,16 +85,17 @@ const TechStack = () => {
         </div>
 
         <div className="container-1">
-          <h3 className=" font-vsFont mb-6 items-center text-sky-600 md:text-2xl text-center">
+          <h3 className=" font-vsFont mb-6 items-center reveal-up text-sky-600 md:text-2xl text-center">
             Languages I'm proficient with.
           </h3>
-          <div className="grid gap-3 font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
+          <div className="grid gap-3 reveal-up font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
               {
                 lang.map(({imgSrc, label}, key) => (
                   <TechCard 
                   key={key}
                   imgSrc={imgSrc}
                   label={label}
+                  classes="reveal-up"
                   />
                 ))
               }
