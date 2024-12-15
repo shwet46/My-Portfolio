@@ -6,7 +6,7 @@ const works = [
     imgSrc: '/photos/p1.png',
     title: 'Invoice application',
     desc: 'This application enables you to extract data from your invoices in various forms(pdf, excel, images, etc.) into tabular format.',
-    projectLink: ''
+    projectLink: 'https://data-extraction-app.vercel.app/'
   },
   {
     imgSrc: '/photos/p2.png',
