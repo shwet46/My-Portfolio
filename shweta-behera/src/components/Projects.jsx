@@ -9,22 +9,22 @@ const works = [
     projectLink: ''
   },
   {
-    imgSrc: '/photos/p1.png',
+    imgSrc: '/photos/p2.png',
     title: 'Personal Portfolio',
     desc: 'This is my portfolio which I created using react, I used my favourite theme and the things I like which makes it more special. Currently improving this every other day.',
-    projectLink: ''
+    projectLink: 'https://shwetabehera.vercel.app/'
   },
   {
-    imgSrc: '/photos/p1.png',
+    imgSrc: '/photos/p3.png',
     title: 'Endoscope enquiry management system',
     desc: 'Developed a enquiry management system to keep records of the data of customers and their purchases in relational databases.',
     projectLink: ''
   },
   {
-    imgSrc: '/photos/p1.png',
+    imgSrc: '/photos/p4.png',
     title: 'Space sudoku game',
     desc: 'Created a sudoku game based on solar system planets.',
-    projectLink: ''
+    projectLink: 'https://shwet46.github.io/Sudoku-by-SB/'
   },
 ];
 
