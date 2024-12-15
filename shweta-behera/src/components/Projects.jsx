@@ -3,21 +3,21 @@ import ProjectCard from './ProjectCard';
 
 const works = [
   {
-    imgSrc: '/photos/image.png',
-    title: 'Project 1',
-    desc: 'this is the description for project-1',
+    imgSrc: '/photos/p1.png',
+    title: 'Invoice application',
+    desc: 'This application enables you to extract data from your invoices in various forms(pdf, excel, images, etc.) into tabular format.',
     projectLink: ''
   },
   {
-    imgSrc: '/photos/image.png',
-    title: 'Project 2',
-    desc: 'this is the description for project-2',
+    imgSrc: '/photos/p1.png',
+    title: 'Personal Portfolio',
+    desc: 'This is my portfolio which I created using react, I used my favourite theme and the things I like for the portfolio which makes it more special.',
     projectLink: ''
   },
   {
-    imgSrc: '/photos/image.png',
-    title: 'Project 3',
-    desc: 'this is the description for project-3',
+    imgSrc: '/photos/p1.png',
+    title: 'Endoscope enquiry management system',
+    desc: 'Developed a enquiry management system to keep records of the data of customers and their purchases in relational databases.',
     projectLink: ''
   },
 ];
