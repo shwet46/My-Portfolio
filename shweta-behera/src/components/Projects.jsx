@@ -11,13 +11,19 @@ const works = [
   {
     imgSrc: '/photos/p1.png',
     title: 'Personal Portfolio',
-    desc: 'This is my portfolio which I created using react, I used my favourite theme and the things I like for the portfolio which makes it more special.',
+    desc: 'This is my portfolio which I created using react, I used my favourite theme and the things I like which makes it more special. Currently improving this every other day.',
     projectLink: ''
   },
   {
     imgSrc: '/photos/p1.png',
     title: 'Endoscope enquiry management system',
     desc: 'Developed a enquiry management system to keep records of the data of customers and their purchases in relational databases.',
+    projectLink: ''
+  },
+  {
+    imgSrc: '/photos/p1.png',
+    title: 'Space sudoku game',
+    desc: 'Created a sudoku game based on solar system planets.',
     projectLink: ''
   },
 ];
@@ -32,7 +38,7 @@ const Projects = () => {
               <h3 className="md:text-2xl md:pb-4 reveal-up">
                   These are some of my Projects I did.
               </h3>
-              <div className="grid gap-x-4 mt-2 gap-y-5 auto-cols-fr reveal-up grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
+              <div className="grid gap-x-4 mt-2 gap-y-6 auto-cols-fr reveal-up grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
                   {
                     works.map(({imgSrc, title, desc, projectLink}, key) => (
                         <ProjectCard
