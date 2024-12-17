@@ -62,12 +62,19 @@ const Home = () => {
           Hi, I'm <span className="text-amber-300">{displayedText}{isTyping ? '_' : ''}</span>
         </h1>
         <div className="w-full max-w-[800px] text-center">
-          <h2 className="font-vsFont md:text-xl text-amber-200 text-md reveal-up">
-            Sometimes I write code, do Competitive Programming or do something creative. 
-            If I feel very optimistic, I even do development and write blogs about technology 
-            and DSA concepts. To know more about me, scroll down ↓
-          </h2>
-        </div>
+  <h2 className="font-vsFont md:text-xl text-amber-200 text-md reveal-up">
+    Sometimes I write code, do Competitive Programming or do something creative. 
+    If I feel very optimistic, I even do development and write blogs about technology 
+    and DSA concepts. To know more about me, scroll down
+    <span
+      className="material-symbols-rounded text-amber-200 text-3xl animate-bounce ml-2 relative top-4"
+      aria-hidden="true"
+    >
+      arrow_downward
+    </span>
+  </h2>
+</div>
+
       </div>
     </section>
   );

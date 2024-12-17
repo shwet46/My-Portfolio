@@ -16,7 +16,7 @@ const ProjectCard = ({imgSrc, title, desc, projectLink, classes}) => {
                 <p className="my-2 font-vsFont md:text-md mb-4 text-gray-400 text-start">
                     {desc}
                 </p>
-                <div className="grid grid-cols-[1fr,1fr]">
+                <div className="flex flex-row gap-1">
                     <p className="mr-2">Link to project</p>
                 <div className="w-6 h-6 rounded-lg grid place-items-center bg-sky-400/50 text-zinc-200 shrink-0">
                     <span className="material-symbols-rounded" aria-hidden="true">arrow_outward</span>

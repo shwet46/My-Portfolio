@@ -44,8 +44,13 @@ const About = () => {
             </li>
           ))}
         </ul>
+          <div className="flex md:flex-row flex-col gap-3"> 
           <div className="flex items-center gap-3 reveal-up">
             <a href="mailto:shwetabehera444@gmail.com"><Button label="Mail me" icon="mail" /></a>
+          </div>
+          <div className="flex items-center gap-3 reveal-up">
+            <a href="https://medium.com/@shwetabehera"><Button label="Check out my articles" icon="edit_note" /></a>
+          </div>
           </div>
         </div>
 
