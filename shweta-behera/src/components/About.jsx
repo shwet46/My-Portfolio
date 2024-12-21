@@ -38,7 +38,7 @@ const About = () => {
           </h3>
           <ul className="grid grid-cols-1 gap-2 text-lg mb-8 font-vsFont">
           {techs.map((tech, index) => (
-            <li key={index} className="flex items-center text-sm md:text-md text-emerald-500 gap-3 reveal-up">
+            <li key={index} className="flex items-center text-sm md:text-xl text-emerald-500 gap-3 reveal-up">
               <span className="text-xl">≫</span>
               {tech}
             </li>
