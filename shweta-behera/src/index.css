@@ -90,3 +90,14 @@ body {
 .reveal-up{
   @apply translate-y-20 opacity-0
 }
+
+.blinking-cursor {
+  display: inline-block;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

@@ -12,7 +12,7 @@ const Home = () => {
 
   const canvasRef = useRef(null);
   const stars = useRef([]);
-  const greyShades = ['#ddd', '#ccc', '#bbb', '#aaa', '#999']; // Shades for stars
+  const greyShades = ['#ddd', '#ccc', '#bbb', '#aaa', '#999']; 
 
   // Typing animation logic
   useEffect(() => {
@@ -136,7 +136,8 @@ const Home = () => {
           />
         </figure>
         <h1 className="md:text-[55px] text-[40px] font-vsFont text-white">
-          Hi, I'm <span className="text-amber-300">{displayedText}{isTyping ? '_' : ''}</span>
+        Hi, I'm <span className="text-amber-300">{displayedText}<span className={`blinking-cursor ${isTyping ? '' : 'hidden'}` + "text-zinc-300"}>_</span></span>
+
         </h1>
         <div className="w-full max-w-[820px] text-center">
           <h2 className="font-vsFont md:text-xl text-amber-200 text-md reveal-up">
