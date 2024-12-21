@@ -61,7 +61,7 @@ body {
 }
 
 .headline-2 {
-  @apply md:text-2xl text-xl leading-tight lg:text-[20px] max-w-[45ch] text-left;
+  @apply md:text-2xl leading-tight lg:text-[20px] max-w-[45ch] text-left;
 }
 
 @screen lg {
@@ -71,8 +71,8 @@ body {
 }
 
 .btn {
-  @apply max-w-max h-10 flex items-center gap-2 px-4 rounded-xl font-btnFont text-xl
-  ring-1 ring-zinc-50/5 ring-inset transition-[background-color] bg-pink-600/50;
+  @apply max-w-max h-10 flex items-center gap-2 px-4 rounded-xl font-btnFont md:text-xl
+  ring-1 ring-zinc-50/5 ring-inset transition-[background-color] bg-pink-600/50 text-sm;
 }
 
 .btn .material-symbols-rounded {

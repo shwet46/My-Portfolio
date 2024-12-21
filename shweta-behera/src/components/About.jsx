@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <section id="about" className="pt-24 lg:pt-28">
-            <div className="flex font-secFont left-0 items-start py-4 px-4 mx-2 text-zinc-400 md:text-3xl text-2xl tracking-wide reveal-up">
+            <div className="flex font-secFont left-0 items-start py-4 md:px-4  md:mx-2 mx-0 text-zinc-400 md:text-3xl text-2xl tracking-wide reveal-up">
               {"<About me/>"}
             </div>
       <div className="container lg:grid bg-zinc-800/50 lg:grid-cols-2 items-start lg:gap-8 reveal-up">
@@ -26,7 +26,7 @@ const About = () => {
           <h2 className="headline-1 mt-2 font-vsFont reveal-up">
             I'm Shweta Behera
           </h2>
-          <h3 className="text-[20px] mt-4 text-left text-stone-400 font-vsFont reveal-up">
+          <h3 className="md:text-[20px] text-[16px] mt-4 text-left text-stone-400 font-vsFont reveal-up">
             <span className="material-symbols-rounded text-yellow-300 text-[16px]">location_on</span> India
           </h3>
           <h3 className="headline-2 mt-3 font-vsFont text-cyan-600 reveal-up">
@@ -38,7 +38,7 @@ const About = () => {
           </h3>
           <ul className="grid grid-cols-1 gap-2 text-lg mb-8 font-vsFont">
           {techs.map((tech, index) => (
-            <li key={index} className="flex items-center sm:text-sm text-emerald-500 gap-3 reveal-up">
+            <li key={index} className="flex items-center text-sm md:text-md text-emerald-500 gap-3 reveal-up">
               <span className="text-xl">≫</span>
               {tech}
             </li>

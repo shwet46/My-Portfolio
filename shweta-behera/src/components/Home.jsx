@@ -135,7 +135,7 @@ const Home = () => {
             className="w-full"
           />
         </figure>
-        <h1 className="md:text-[55px] text-[40px] font-vsFont text-white">
+        <h1 className="md:text-[55px] text-[26px] font-vsFont text-white">
         Hi, I'm <span className="text-amber-300">{displayedText}<span className={`blinking-cursor ${isTyping ? '' : 'hidden'}` + "text-zinc-300"}>_</span></span>
 
         </h1>

@@ -31,11 +31,11 @@ const works = [
 const Projects = () => {
   return (
     <section id="project" className="pt-16 pb-4 section">
-            <div className="flex font-secFont reveal-up left-0 items-start py-4 px-4 mx-2 text-zinc-400 md:text-3xl text-2xl tracking-wide">
+            <div className="flex font-secFont reveal-up left-0 items-start md:py-4 py-1 md:px-4 px-2 md:mx-2 mx-0  text-zinc-400 md:text-3xl text-2xl tracking-wide">
               {"<Projects/>"}
             </div>
             <div className="container-1 font-vsFont mb-2">
-              <h3 className="md:text-2xl md:pb-4 reveal-up">
+              <h3 className="md:text-2xl text-left md:text-center md:pb-4 reveal-up">
                   These are some of my Projects I did.
               </h3>
               <div className="grid gap-x-4 mt-2 gap-y-6 auto-cols-fr reveal-up grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
