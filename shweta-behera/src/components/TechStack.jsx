@@ -10,11 +10,6 @@ const TechStack = () => {
       desc: 'Toolkit'
     },
     {
-      imgSrc: '/photos/react.png',
-      label: 'React',
-      desc: 'Framework'
-    },
-    {
       imgSrc: '/photos/javascript.png',
       label: 'JavaScript',
       desc: 'Interaction'
@@ -25,9 +20,14 @@ const TechStack = () => {
       desc: 'User Interface'
     },
     {
-      imgSrc: '/photos/node.png',
-      label: 'Node.js',
-      desc: 'Web Server'
+      imgSrc: '/photos/post.png',
+      label: 'PostgreSQL',
+      desc: 'Database'
+    },
+    {
+      imgSrc: '/photos/mongodb.png',
+      label: 'MongoDB',
+      desc: 'Database'
     },
     {
       imgSrc: '/photos/express.png',
@@ -35,9 +35,14 @@ const TechStack = () => {
       desc: 'Node Framework'
     },
     {
-      imgSrc: '/photos/post.png',
-      label: 'PostgreSQL',
-      desc: 'Database'
+      imgSrc: '/photos/react.png',
+      label: 'React',
+      desc: 'Framework'
+    },
+    {
+      imgSrc: '/photos/node.png',
+      label: 'Node.js',
+      desc: 'Web Server'
     },
   ];
 
@@ -66,7 +71,7 @@ const TechStack = () => {
       {"<Tech stack/>"}
         </div>
         <div className="container-1">
-          <h3 className=" font-vsFont mb-6  items-center text-purple-600 md:text-2xl d:text-center text-left reveal-up">
+          <h3 className=" font-vsFont mb-6  items-center text-purple-600 md:text-2xl md:text-center text-left reveal-up">
             These are some Tools and Technologies I have worked with.
           </h3>
           <div className="grid gap-3 font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))] reveal-up">
