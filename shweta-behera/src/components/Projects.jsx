@@ -20,12 +20,6 @@ const works = [
     desc: 'Developed a enquiry management system to keep records of the data of customers and their purchases in relational databases.',
     projectLink: ''
   },
-  {
-    imgSrc: '/photos/p4.png',
-    title: 'Space sudoku game',
-    desc: 'Created a sudoku game based on solar system planets.',
-    projectLink: 'https://shwet46.github.io/Sudoku-by-SB/'
-  },
 ];
 
 const Projects = () => {

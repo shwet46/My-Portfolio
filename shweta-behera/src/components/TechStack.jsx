@@ -10,24 +10,9 @@ const TechStack = () => {
       desc: 'Toolkit'
     },
     {
-      imgSrc: '/photos/javascript.png',
-      label: 'JavaScript',
-      desc: 'Interaction'
-    },
-    {
-      imgSrc: '/photos/tailwind.png',
-      label: 'TailwindCSS',
-      desc: 'User Interface'
-    },
-    {
-      imgSrc: '/photos/post.png',
-      label: 'PostgreSQL',
-      desc: 'Database'
-    },
-    {
-      imgSrc: '/photos/mongodb.png',
-      label: 'MongoDB',
-      desc: 'Database'
+      imgSrc: '/photos/next.png',
+      label: 'Next.js',
+      desc: 'Framework'
     },
     {
       imgSrc: '/photos/express.png',
@@ -44,12 +29,30 @@ const TechStack = () => {
       label: 'Node.js',
       desc: 'Web Server'
     },
+    {
+      imgSrc: '/photos/post.png',
+      label: 'PostgreSQL',
+      desc: 'Database'
+    },
+    {
+      imgSrc: '/photos/mongodb.png',
+      label: 'MongoDB',
+      desc: 'Database'
+    },
   ];
 
   const lang = [
     {
       imgSrc: '/photos/java.png',
       label: 'Java',
+    },
+    {
+      imgSrc: '/photos/javascript.png',
+      label: 'JavaScript',
+    },
+    {
+      imgSrc: '/photos/typescript.png',
+      label: 'TypeScript',
     },
     {
       imgSrc: '/photos/cpp.png',
@@ -72,7 +75,7 @@ const TechStack = () => {
         </div>
         <div className="container-1">
           <h3 className=" font-vsFont mb-6  items-center text-purple-600 md:text-2xl md:text-center text-left reveal-up">
-            These are some Tools and Technologies I have worked with.
+            Some Frameworks, tools & databases I have worked with.
           </h3>
           <div className="grid gap-3 font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))] reveal-up">
               {
