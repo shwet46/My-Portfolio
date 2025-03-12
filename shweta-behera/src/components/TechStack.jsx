@@ -77,7 +77,7 @@ const TechStack = () => {
           <h3 className=" font-vsFont mb-6  items-center text-purple-600 md:text-2xl md:text-center text-left reveal-up">
             Some Frameworks, tools & databases I have worked with.
           </h3>
-          <div className="grid gap-3 font-vsFont text-start grid-cols-[repeat(auto-fill,minmax(250px,1fr))] reveal-up">
+          <div className="grid gap-3 font-vsFont text-start  grid-cols-[repeat(auto-fill,minmax(250px,1fr))] reveal-up">
               {
                 skillItem.map(({imgSrc, label, desc}, key) => (
                   <TechCard 
