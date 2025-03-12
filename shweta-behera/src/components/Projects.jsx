@@ -18,7 +18,7 @@ const works = [
     imgSrc: '/photos/p3.png',
     title: 'Endoscope enquiry management system',
     desc: 'Developed a enquiry management system to keep records of the data of customers and their purchases in relational databases.',
-    projectLink: ''
+    projectLink: 'https://github.com/shwet46/endoscope-enquiry-management'
   },
 ];
 
