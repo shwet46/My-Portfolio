@@ -31,7 +31,7 @@ loaderStyles.textContent = `
   }
   
   @keyframes fadeIn {
-    from { opacity: 0; }
+    from { opacity: 1; }
     to { opacity: 1; }
   }
   
