@@ -43,6 +43,7 @@ function App() {
       <main>
         <Home/>
         <About/>
+        <Coding/>
         <TechStack/>
         <Projects/>
         <Contact/>
