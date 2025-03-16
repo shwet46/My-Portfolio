@@ -17,7 +17,7 @@ const ProjectCard = ({imgSrc, title, desc, projectLink, classes}) => {
                     {desc}
                 </p>
                 <div className="flex flex-row gap-1">
-                    <p className="mr-2">Link to project</p>
+                    <p className="mr-2">Link</p>
                 <div className="w-6 h-6 rounded-lg grid place-items-center bg-sky-400/50 text-zinc-200 shrink-0">
                     <span className="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
                 </div>
