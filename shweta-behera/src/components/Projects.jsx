@@ -20,6 +20,12 @@ const works = [
     desc: 'Developed a enquiry management system to keep records of the data of customers and their purchases in relational databases.',
     projectLink: 'https://github.com/shwet46/endoscope-enquiry-management'
   },
+  {
+    imgSrc: '/photos/p4.png',
+    title: 'Cplusplus',
+    desc: 'This is a revamped version of the cplusplus.com website. It is a C++ reference website that provides information about the C++ programming language.',
+    projectLink: 'https://cplusplus-delta.vercel.app/'
+  },
 ];
 
 const Projects = () => {
