@@ -55,7 +55,7 @@ const About = () => {
         </div>
 
         <div className="hidden lg:block">
-          <figure className="w-full max-w-[380px] ml-auto mr-6 mt-10 hover:shadow-lg">
+          <figure className="w-full max-w-[380px] ml-auto  hover:shadow-lg">
             <img src="photos/sb13.jpg" alt="" width={356} height={500} className="w-full reveal-up rounded-lg" />
           </figure>
         </div>
