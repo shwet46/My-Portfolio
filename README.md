@@ -5,7 +5,7 @@ The design of this site is inspired by **Batman-themed color schemes** combined 
 I keep updating this every time I learn something new or feel like experimenting with the style.
 
 <img 
-  src="https://github.com/shwet46/My-Portfolio/blob/main/public/photos/p2.png" 
+  src="https://github.com/shwet46/My-Portfolio/blob/main/public/photos/preview.png" 
   alt="Portfolio Screenshot" 
   width="100%" 
   height="auto"
@@ -27,8 +27,7 @@ Built from scratch using the technologies I love, this site is designed to be **
 
 ## 🛠️ Tech Stack
 
-- React  
-- Vite  
+- React + Vite
 - Tailwind CSS  
 - JavaScript  
 
