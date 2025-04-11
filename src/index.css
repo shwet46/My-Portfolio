@@ -16,8 +16,6 @@ body {
   hover:bg-zinc-50/[0.02] transition-transform transition-colors active:scale-95
 }
 
-/* Navbar */
-
 .navbar {
   @apply absolute left-0 top-full mt-2 min-w-40 p-2 bg-transparent font-navFont
   rounded-2xl ring-inset ring-1 ring-transparent scale-90 
