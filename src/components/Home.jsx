@@ -47,19 +47,19 @@ const Home = () => {
 
     const createStars = () => {
       stars.current = [];
-      const totalStars = 350; // Increased stars for more density
+      const totalStars = 350; 
       for (let i = 0; i < totalStars; i++) {
-        const isEdge = Math.random() < 0.6; // Bias 60% of stars to edges
+        const isEdge = Math.random() < 0.6; 
         const x = isEdge
           ? Math.random() < 0.5
-            ? Math.random() * (canvas.width * 0.3) // Left side (30% of canvas width)
-            : canvas.width * 0.7 + Math.random() * (canvas.width * 0.3) // Right side (30%)
-          : Math.random() * canvas.width; // Spread some stars across the middle too
+            ? Math.random() * (canvas.width * 0.3) 
+            : canvas.width * 0.7 + Math.random() * (canvas.width * 0.3) 
+          : Math.random() * canvas.width; 
 
         stars.current.push({
           x: x,
           y: Math.random() * canvas.height,
-          size: Math.random() * 1 + 0.5, // Smaller star sizes (0.5 - 1.5 pixels)
+          size: Math.random() * 1 + 0.5, 
           color: greyShades[Math.floor(Math.random() * greyShades.length)],
         });
       }
@@ -76,7 +76,7 @@ const Home = () => {
     };
 
     const handleMouseMove = (event) => {
-      if (window.innerWidth < 768) return; // Hide interaction on small screens
+      if (window.innerWidth < 768) return; 
 
       drawStars();
       const mouse = {
@@ -103,7 +103,6 @@ const Home = () => {
       drawStars();
     };
 
-    // Disable canvas on small screens
     if (window.innerWidth >= 768) {
       createStars();
       drawStars();

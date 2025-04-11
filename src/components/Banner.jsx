@@ -10,13 +10,12 @@ const Banner = () => {
     let dots = [];
     const arrayColors = ["#eee", "#545454", "#596d91", "#bb5a68", "#696541"];
 
-    // Initialize canvas size
+
     const resizeCanvas = () => {
       canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
     };
 
-    // Generate dots
     const initializeDots = () => {
       dots = [];
       for (let index = 0; index < 50; index++) {
@@ -29,7 +28,6 @@ const Banner = () => {
       }
     };
 
-    // Draw dots on the canvas
     const drawDots = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       dots.forEach((dot) => {
@@ -40,7 +38,6 @@ const Banner = () => {
       });
     };
 
-    // Mouse interaction
     const handleMouseMove = (event) => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       drawDots();
@@ -63,7 +60,6 @@ const Banner = () => {
       });
     };
 
-    // Event listeners
     const addEventListeners = () => {
       canvas.addEventListener("mousemove", handleMouseMove);
       canvas.addEventListener("mouseout", drawDots);
@@ -74,14 +70,12 @@ const Banner = () => {
       });
     };
 
-    // Initialize everything
     resizeCanvas();
     initializeDots();
     drawDots();
     addEventListeners();
 
     return () => {
-      // Cleanup
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("mouseout", drawDots);
       window.removeEventListener("resize", drawDots);

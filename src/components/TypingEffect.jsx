@@ -1,4 +1,3 @@
-// src/components/TypingEffect.jsx
 import React, { useEffect, useState } from 'react';
 
 const TypingEffect = ({ text, speed = 100, duration = 5000, onFinish }) => {
@@ -16,7 +15,6 @@ const TypingEffect = ({ text, speed = 100, duration = 5000, onFinish }) => {
       }
     }, speed);
 
-    // Make sure the typing stops after the specified duration
     const timeout = setTimeout(() => {
       if (!isDone) {
         clearInterval(interval);
@@ -25,7 +23,6 @@ const TypingEffect = ({ text, speed = 100, duration = 5000, onFinish }) => {
       }
     }, duration);
 
-    // Trigger onFinish callback after typing completes
     if (isDone && onFinish) {
       onFinish();
     }
@@ -40,9 +37,9 @@ const TypingEffect = ({ text, speed = 100, duration = 5000, onFinish }) => {
     <div className="text-5xl font-bold whitespace-nowrap inline-block">
       {displayedText}
       {isDone ? (
-        <span className="animate-blink border-r-4 border-black"></span> // Blinking cursor after typing
+        <span className="animate-blink border-r-4 border-black"></span> 
       ) : (
-        <span className="border-r-4 border-black animate-pulse"></span> // Cursor animates during typing
+        <span className="border-r-4 border-black animate-pulse"></span> 
       )}
     </div>
   );

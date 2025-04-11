@@ -14,6 +14,12 @@ const Coding = () => {
       highlights: ['Contest Rating : 1400+', '2★ coder'],
       link: "https://www.codechef.com/users/shwet46",
     },
+    {
+      imgSrc: '/photos/codeforces.png',
+      profilename: "shwet46",
+      highlights: ['Contest Rating : 1000+', 'Newbie'],
+      link: "https://codeforces.com/profile/shwet46",
+    },
   ];
 
   return (
@@ -23,7 +29,8 @@ const Coding = () => {
       </div>
       <div className="container-1">
         <h3 className="font-vsFont mb-6 items-center reveal-up text-green-400 md:text-2xl text-left md:text-center">
-          Yes, I do competitive programming :)
+          Yes, I do competitive programming :) <br/>
+          Right now I'm average but I'm improving and one day I will be the best Competitive programmer.
         </h3>
         <div className="flex flex-wrap justify-center gap-6 reveal-up font-vsFont text-start">
           {profiles.map(({ imgSrc, profilename, highlights, link }, key) => (
