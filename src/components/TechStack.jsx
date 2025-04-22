@@ -5,6 +5,11 @@ const TechStack = () => {
 
   const skillItem = [
     {
+      imgSrc: '/photos/flutter.png',
+      label: 'Flutter',
+      desc: 'Framework'
+    },
+    {
       imgSrc: '/photos/redux.png',
       label: 'Redux',
       desc: 'Toolkit'
@@ -65,6 +70,10 @@ const TechStack = () => {
     {
       imgSrc: '/photos/c.png',
       label: 'C',
+    },
+    {
+      imgSrc: '/photos/dart.png',
+      label: 'Dart',
     },
   ];
 
