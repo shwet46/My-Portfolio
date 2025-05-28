@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar'; 
+import Navbar from './Navbar';
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -27,11 +27,8 @@ const Header = () => {
           <Navbar navOpen={navOpen} />
         </div>
 
-        <a href="#contact" className="font-vsFont max-md:hidden bg-yellow-600 py-2 rounded-lg">Contact me</a>
-
-       <div>
-
-       </div>
+        <div>
+        </div>
       </div>
     </header>
   );

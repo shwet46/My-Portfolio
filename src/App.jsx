@@ -46,7 +46,6 @@ function App() {
         <Coding/>
         <TechStack/>
         <Projects/>
-        <Contact/>
       </main>
       <Footer/>
     </ReactLenis>

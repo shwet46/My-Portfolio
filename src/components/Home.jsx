@@ -140,9 +140,8 @@ const Home = () => {
         </h1>
         <div className="w-full max-w-[820px] text-center">
           <h2 className="font-vsFont md:text-xl text-amber-200 text-md reveal-up">
-            Sometimes I write code, do Competitive Programming or do something creative. 
-            If I feel very optimistic, I even do development and write blogs about technology 
-            and DSA concepts. To know more about me, 
+            I'm into doing creative stuff and problem solving. I use my problem solving ability for competitive programming and combination of both for developing cool projects.<br/>
+            To know more about me, 
             scroll down
             <span
               className="material-symbols-rounded text-amber-200 text-3xl animate-bounce ml-2 relative top-4"

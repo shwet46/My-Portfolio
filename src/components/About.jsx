@@ -2,63 +2,125 @@ import React from 'react';
 import Button from './Button';
 
 const About = () => {
-
   const techs = [
     'Competitive programming',
     'Web development',
-    'Database Management',
-    'Tech blog writing',
+    'App development',
   ];
 
   return (
-    <section id="about" className="pt-24 lg:pt-28">
-            <div className="flex font-secFont left-0 items-start py-4 md:px-4  md:mx-2 mx-0 text-zinc-400 md:text-3xl text-2xl tracking-wide reveal-up">
-              {"<About me/>"}
+    <section id="about" className="pt-24 lg:pt-28 px-4 md:px-8">
+      {/* Section Header */}
+      <div className="flex font-secFont items-start py-6 text-zinc-300 md:text-4xl text-3xl tracking-wide reveal-up">
+        <span className="text-pink-400">{"<"}</span>
+        <span className="text-white">About me</span>
+        <span className="text-pink-400">{"/>"}</span>
+      </div>
+
+      {/* Bento Grid Layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 max-w-7xl mx-auto">
+        
+        {/* Main Info Card */}
+        <div className="lg:col-span-7 bg-zinc-900 rounded-2xl p-6 md:p-8 border border-zinc-800 reveal-up">
+          <div className="space-y-6">
+            
+            {/* Name & Location */}
+            <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold font-vsFont text-white">
+                I'm <span className="text-pink-400">Shweta</span>
+              </h2>
+              
+              <div className="flex items-center gap-2 text-stone-400 font-vsFont">
+                <span className="material-symbols-rounded text-pink-400 text-xl">location_on</span>
+                <span className="text-lg">India</span>
+              </div>
             </div>
-      <div className="container lg:grid bg-zinc-800/50 lg:grid-cols-2 items-start lg:gap-8 reveal-up">
-        <div>
-          <div className="flex items-start">
-            <figure className="">
-              {/* <img src="" alt="atv" width={40} height={40} className="img-cover"/>*/}
-            </figure>
-           
-          </div>
-          <h2 className="headline-1 mt-2 font-vsFont reveal-up">
-            I'm Shweta Behera
-          </h2>
-          <h3 className="md:text-[20px] text-[16px] mt-4 text-left text-stone-400 font-vsFont reveal-up">
-            <span className="material-symbols-rounded text-yellow-300 text-[16px]">location_on</span> India
-          </h3>
-          <h3 className="headline-2 mt-3 font-vsFont text-cyan-600 reveal-up">
-              currently an engineering student pursuing Bachelor in Technology.
-              I have worked with various web development technologies.
-          </h3>
-          <h3 className="headline-2 mt-4 mb-4 font-vsFont text-emerald-500 reveal-up">
-              Things I do:
-          </h3>
-          <ul className="grid grid-cols-1 gap-2 text-lg mb-8 font-vsFont">
-          {techs.map((tech, index) => (
-            <li key={index} className="flex items-center text-sm md:text-xl text-emerald-500 gap-3 reveal-up">
-              <span className="text-xl">≫</span>
-              {tech}
-            </li>
-          ))}
-        </ul>
-          <div className="flex md:flex-row flex-col gap-3"> 
-          <div className="flex items-center gap-3 reveal-up">
-            <a href="mailto:shwetabehera444@gmail.com"><Button label="Mail me" icon="mail" /></a>
-          </div>
-          <div className="flex items-center gap-3 reveal-up">
-            <a href="https://medium.com/@shwetabehera"><Button label="Check out my articles" icon="edit_note" /></a>
-          </div>
+
+            {/* Description */}
+            <div className="space-y-4 text-left">
+              <p className="text-stone-300 font-vsFont text-base md:text-lg leading-relaxed">
+                I am an enthusiastic engineering student with a passion for 
+                <span className="text-pink-400 font-medium"> building innovative solutions </span>
+                and 
+                <span className="text-rose-400 font-medium"> solving complex problems</span>. 
+              </p>
+              <p className="text-stone-300 font-vsFont text-base md:text-lg leading-relaxed">
+                My journey has led me to explore various technologies and frameworks, especially in web development and competitive programming. I love learning new concepts, sharing knowledge, and taking on challenges that help me grow.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="hidden lg:block">
-          <figure className="w-full max-w-[380px] ml-auto  hover:shadow-lg">
-            <img src="photos/sb13.jpg" alt="" width={356} height={500} className="w-full reveal-up rounded-lg" />
-          </figure>
+        {/* Image Card */}
+        <div className="lg:col-span-5 bg-zinc-900 rounded-2xl p-4 border border-zinc-800 reveal-up">
+          <div className="h-full flex items-center justify-center">
+            <img 
+              src="photos/sb13.jpg" 
+              alt="Shweta - Software Developer" 
+              width={300} 
+              height={400} 
+              className="w-full h-auto max-w-[300px] rounded-xl object-cover" 
+            />
+          </div>
         </div>
+
+        {/* Skills Card */}
+        <div className="lg:col-span-5 bg-zinc-900 rounded-2xl p-6 border border-zinc-800 reveal-up">
+          <h3 className="text-xl md:text-2xl font-bold font-vsFont text-pink-400 mb-6 flex items-center gap-3">
+            <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
+            Things I do
+          </h3>
+          <div className="space-y-3">
+            {techs.map((tech, index) => (
+              <div 
+                key={index} 
+                className="flex items-center gap-4 p-4 bg-zinc-800 rounded-xl border border-zinc-700 hover:border-pink-400/50 transition-all duration-200"
+              >
+                <div className="w-2 h-2 bg-pink-400 rounded-full flex-shrink-0"></div>
+                <span className="text-white font-vsFont text-base md:text-lg font-medium">{tech}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Collaboration Card */}
+        <div className="lg:col-span-7 bg-zinc-900 rounded-2xl p-6 md:p-8 border border-zinc-800 reveal-up">
+          <div className="space-y-6 text-left">
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold font-vsFont text-white mb-2">
+                Let's Collaborate!
+              </h3>
+              <p className="text-stone-300 font-vsFont text-base md:text-lg leading-relaxed">
+                I'm always excited to work on interesting projects and connect with fellow developers. 
+                Whether you have an idea to discuss, a project to collaborate on, or just want to chat about tech, 
+                feel free to reach out!
+              </p>
+            </div>
+
+            {/* Contact Button */}
+            <div className="pt-4">
+              <a href="mailto:shwetabehera444@gmail.com" className="inline-block reveal-up">
+                <button className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-xl font-medium font-vsFont shadow-lg transition-all duration-200">
+                  Mail me for collaboration
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Quote/Motto Card */}
+        <div className="lg:col-span-12 bg-gradient-to-r from-pink-500/10 to-rose-500/10 rounded-2xl p-6 md:p-8 border border-pink-500/20 reveal-up">
+          <div className="text-center space-y-4">
+            <div className="text-4xl md:text-6xl text-pink-400/20 font-bold">"</div>
+            <p className="text-lg md:text-xl font-vsFont text-stone-200 italic max-w-4xl mx-auto leading-relaxed">
+              Every problem is an opportunity to learn something new, and every line of code is a step towards building something amazing.
+            </p>
+            <div className="flex justify-center">
+              <div className="w-16 h-1 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
