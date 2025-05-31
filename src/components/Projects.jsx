@@ -17,7 +17,7 @@ const works = [
     techStack: ['Next.js', 'TypeScript', 'Hugging face', 'Gemini', 'TailwindCSS']
   },
   {
-    title: 'C++ Learning Platform',
+    title: 'Cplusplus',
     desc: 'A modernized version of the classic C++ reference platform, featuring an enhanced user interface and additional practice problems section. Designed to provide comprehensive learning resources for C++ developers at all skill levels.',
     githubLink: 'https://github.com/shwet46/cplusplus-clone',
     liveLink: 'https://cplusplus-delta.vercel.app/',
@@ -65,7 +65,7 @@ const Projects = () => {
 
         {/* Call to Action */}
         <div className="mt-16 text-center reveal-up">
-          <div className="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 max-w-2xl mx-auto">
+          <div className="bg-zinc-900 rounded-2xl p-8 border-2 border-zinc-800 max-w-2xl mx-auto">
             <h3 className="text-xl md:text-2xl font-bold font-vsFont text-white mb-4">
               Want to see more?
             </h3>

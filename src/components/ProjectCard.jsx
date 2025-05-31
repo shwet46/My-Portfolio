@@ -59,7 +59,7 @@ const ProjectCard = ({
     <article
       className={`
         flex flex-col rounded-2xl
-        bg-zinc-900 border border-zinc-800
+        bg-zinc-900 border-2 border-zinc-800
         p-6 md:p-8 max-w-[380px] min-w-[320px]
         shadow-lg
         transition-all duration-200 ease-out

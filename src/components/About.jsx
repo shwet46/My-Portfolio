@@ -13,30 +13,23 @@ const About = () => {
       {/* Section Header */}
       <div className="flex font-secFont items-start py-6 text-zinc-300 md:text-4xl text-3xl tracking-wide reveal-up">
         <span className="text-pink-400">{"<"}</span>
-        <span className="text-white">About me</span>
+        <span className="text-white">AboutMe</span>
         <span className="text-pink-400">{"/>"}</span>
       </div>
 
       {/* Bento Grid Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 max-w-7xl mx-auto">
-        
-        {/* Main Info Card */}
-        <div className="lg:col-span-7 bg-zinc-900 rounded-2xl p-6 md:p-8 border border-zinc-800 reveal-up">
+        <div className="lg:col-span-8 bg-zinc-900 rounded-2xl p-6 md:p-8 border-2 border-zinc-800 reveal-up">
           <div className="space-y-6">
-            
-            {/* Name & Location */}
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold font-vsFont text-white">
+              <h2 className="text-4xl text-left md:text-5xl font-bold font-vsFont text-white">
                 I'm <span className="text-pink-400">Shweta</span>
               </h2>
-              
               <div className="flex items-center gap-2 text-stone-400 font-vsFont">
                 <span className="material-symbols-rounded text-pink-400 text-xl">location_on</span>
                 <span className="text-lg">India</span>
               </div>
             </div>
-
-            {/* Description */}
             <div className="space-y-4 text-left">
               <p className="text-stone-300 font-vsFont text-base md:text-lg leading-relaxed">
                 I am an enthusiastic engineering student with a passion for 
@@ -52,20 +45,20 @@ const About = () => {
         </div>
 
         {/* Image Card */}
-        <div className="lg:col-span-5 bg-zinc-900 rounded-2xl p-4 border border-zinc-800 reveal-up">
+        <div className="lg:col-span-4 bg-zinc-900 rounded-2xl p-4 border-2 border-zinc-800 reveal-up">
           <div className="h-full flex items-center justify-center">
             <img 
               src="photos/sb13.jpg" 
               alt="Shweta - Software Developer" 
-              width={300} 
-              height={400} 
+              width={280} 
+              height={380} 
               className="w-full h-auto max-w-[300px] rounded-xl object-cover" 
             />
           </div>
         </div>
 
         {/* Skills Card */}
-        <div className="lg:col-span-5 bg-zinc-900 rounded-2xl p-6 border border-zinc-800 reveal-up">
+        <div className="lg:col-span-5 bg-zinc-900 rounded-2xl p-6 border-2 border-zinc-800 reveal-up">
           <h3 className="text-xl md:text-2xl font-bold font-vsFont text-pink-400 mb-6 flex items-center gap-3">
             <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
             Things I do
@@ -84,7 +77,7 @@ const About = () => {
         </div>
 
         {/* Collaboration Card */}
-        <div className="lg:col-span-7 bg-zinc-900 rounded-2xl p-6 md:p-8 border border-zinc-800 reveal-up">
+        <div className="lg:col-span-7 bg-zinc-900 rounded-2xl p-6 md:p-8 border-2 border-zinc-800 reveal-up">
           <div className="space-y-6 text-left">
             <div>
               <h3 className="text-xl md:text-2xl font-bold font-vsFont text-white mb-2">

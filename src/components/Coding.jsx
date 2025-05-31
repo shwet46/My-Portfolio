@@ -43,12 +43,11 @@ const profiles = [
     link: 'https://codeforces.com/profile/shwet46',
     color: '#318CE7',
     data: [
-      { month: 'Jan', rating: 900 },
-      { month: 'Feb', rating: 950 },
-      { month: 'Mar', rating: 970 },
-      { month: 'Apr', rating: 980 },
-      { month: 'May', rating: 1000 },
-      { month: 'May', rating: 1090 }
+      { month: 'Nov 9', rating: 616 },
+      { month: 'Nov 10', rating: 854 },
+      { month: 'Nov 30', rating: 924 },
+      { month: 'Dec 24', rating: 1017 },
+      { month: 'May 24', rating: 1090 }
     ]
   }
 ];
@@ -84,17 +83,17 @@ const Coding = () => {
   return (
     <section id="coding" className="pt-24 lg:pt-28 px-4 md:px-8">
       {/* Section Header */}
-      <div className="flex font-secFont items-start py-6 text-zinc-300 md:text-4xl text-3xl tracking-wide reveal-up">
+      <div className="font-secFont py-6 text-zinc-300 md:text-4xl text-3xl tracking-wide text-left reveal-up">
         <span className="text-purple-400">{"<"}</span>
-        <span className="text-white">Coding Profiles</span>
+        <span className="text-white">CodingProfiles</span>
         <span className="text-purple-400">{"/>"}</span>
       </div>
 
       {/* Bento Grid Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 max-w-7xl mx-auto">
-        
+
         {/* Introduction Card */}
-        <div className="lg:col-span-12 bg-zinc-900 rounded-2xl p-6 md:p-8 border border-zinc-800 reveal-up">
+        <div className="lg:col-span-12 bg-zinc-900 rounded-2xl p-6 md:p-8 border-2 border-zinc-800 reveal-up">
           <div className="text-center space-y-4">
             <h3 className="text-xl md:text-2xl font-bold font-vsFont text-white mb-4">
               Competitive Programming Journey
@@ -112,7 +111,7 @@ const Coding = () => {
         {profiles.map((platform, idx) => (
           <div
             key={idx}
-            className="lg:col-span-4 bg-zinc-900 rounded-2xl p-6 border border-zinc-800 hover:border-purple-400/50 transition-all duration-300 reveal-up"
+            className="lg:col-span-4 bg-zinc-900 rounded-2xl p-6 border-2 border-zinc-800 hover:border-purple-400/50 transition-all duration-300 reveal-up"
           >
             {/* Platform Header */}
             <div className="space-y-4 mb-6">
@@ -132,7 +131,7 @@ const Coding = () => {
             </div>
 
             {/* Chart */}
-            <div className="mb-6 bg-zinc-800 rounded-xl p-4 border border-zinc-700">
+            <div className="mb-6 bg-zinc-800 rounded-xl p-4 border-2 border-zinc-700">
               <div className="h-[140px]">
                 {renderChart(platform.data, platform.color)}
               </div>
