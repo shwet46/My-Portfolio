@@ -7,12 +7,13 @@ import Projects from './components/Projects'
 import TechStack from './components/TechStack'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Blogs from './components/Blogs'
 
-//Node modules
 import {ReactLenis} from 'lenis/react';
 import gsap from 'gsap';
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
+import Achievements from './components/Acheivements'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -45,6 +46,8 @@ function App() {
         <About/>
         <TechStack/>
         <Projects/>
+        <Blogs/>
+        <Achievements/>
       </main>
       <Footer/>
     </ReactLenis>

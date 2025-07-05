@@ -37,6 +37,8 @@ export const Navbar = ({ navOpen }) => {
     { label: 'About', link: '#about', className: 'nav-link' },
     { label: 'Tech stack', link: '#tech', className: 'nav-link' },
     { label: 'Projects', link: '#project', className: 'nav-link' },
+    { label: 'Blogs', link: '#blogs', className: 'nav-link' },
+    { label: 'Achivements', link: '#achievements', className: 'nav-link' },
     { label: 'Contact', link: '#contact', className: 'nav-link md:hidden' },
   ];
 

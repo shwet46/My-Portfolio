@@ -1,87 +1,80 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { Github } from 'lucide-react';
 
 const works = [
   {
-    title: 'Personal Portfolio',
-    desc: 'A modern, responsive portfolio website showcasing my technical skills, projects, and professional journey. Built with performance optimization and clean design principles to create an engaging user experience.',
-    githubLink: 'https://github.com/shwet46/My-Portfolio',
-    liveLink: 'https://shwetabehera.vercel.app/',
-    techStack: ['React', 'Tailwind CSS', 'JavaScript']
+    title: 'AlgoGrit',
+    desc: 'A project made for the programmers by a programmer, basically a website to make you more focused with DSA and improve yourself.',
+    githubLink: 'https://github.com/shwet46/algogrit-dsa',
+    liveLink: 'https://algogrit-dsa.vercel.app/',
+    techStack: ['Next.js', 'Firebase', 'TypeScript', 'Monaco', 'Gemini'],
+    featured: false
   },
   {
     title: 'Shwik AI',
-    desc: 'An intelligent document assistant powered by AI that streamlines document workflows. Features include automated document generation, intelligent summarization, and support for multiple formats (DOCX/PDF) with a sleek, intuitive interface.',
+    desc: 'An intelligent document assistant powered by AI that streamlines document workflows. Features include automated document generation, intelligent summarization, and support for multiple formats (DOCX/PDF).',
     githubLink: 'https://github.com/shwet46/Shwik-AI',
     liveLink: 'https://shwik.vercel.app/',
-    techStack: ['Next.js', 'TypeScript', 'Hugging face', 'Gemini', 'TailwindCSS']
+    techStack: ['Next.js', 'TypeScript', 'Hugging Face', 'Gemini', 'TailwindCSS'],
+    featured: false
   },
   {
-    title: 'Cplusplus',
-    desc: 'A modernized version of the classic C++ reference platform, featuring an enhanced user interface and additional practice problems section. Designed to provide comprehensive learning resources for C++ developers at all skill levels.',
-    githubLink: 'https://github.com/shwet46/cplusplus-clone',
-    liveLink: 'https://cplusplus-delta.vercel.app/',
-    techStack: ['Next.js', 'TypeScript', 'TailwindCSS']
-  },
+    title: 'Handwriting Analyzer',
+    desc: 'Takes input of your handwriting image and analyzes your personality trait from the Big Five personality traits.',
+    githubLink: 'https://github.com/shwet46/Handwriting-analysis',
+    liveLink: 'https://handwriting-analysis-by-sb.streamlit.app/',
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    featured: false
+  }
 ];
 
 const Projects = () => {
   return (
     <section id="project" className="pt-24 lg:pt-28 px-4 md:px-8">
       {/* Section Header */}
-      <div className="flex font-secFont items-start py-6 text-zinc-300 md:text-4xl text-3xl tracking-wide reveal-up">
-        <span className="text-orange-400">{"<"}</span>
-        <span className="text-white">Projects</span>
-        <span className="text-orange-400">{"/>"}</span>
+      <div className="max-w-7xl mx-auto mb-16">
+        <div className="flex font-secFont items-start py-6 text-zinc-300 md:text-4xl text-3xl tracking-wide reveal-up">
+          <span className="text-orange-400">{"<"}</span>
+          <span className="text-white">Projects</span>
+          <span className="text-orange-400">{"/>"}</span>
+        </div>
       </div>
 
-      {/* Projects Content */}
+      {/* Normal Grid Layout */}
       <div className="max-w-7xl mx-auto">
-        {/* Description */}
-        <div className="mb-12 reveal-up">
-          <p className="text-stone-300 font-vsFont text-lg md:text-xl leading-relaxed max-w-3xl text-center mx-auto">
-            Here are some of the 
-            <span className="text-orange-400 font-medium"> projects I've built </span>
-            and 
-            <span className="text-orange-500 font-medium"> solutions I've created</span>. 
-            Each project represents a unique challenge and learning experience in my development journey.
-          </p>
-        </div>
-
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
-          {works.map(({ title, desc, githubLink, liveLink, techStack }, key) => (
-            <ProjectCard
-              key={key}
-              title={title}
-              desc={desc}
-              githubLink={githubLink}
-              liveLink={liveLink}
-              techStack={techStack}
-              classes="reveal-up"
-            />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {works.map((project, key) => (
+            <div key={key} className="reveal-up">
+              <ProjectCard {...project} variant={project.featured ? 'featured' : 'standard'} />
+            </div>
           ))}
-        </div>
 
-        {/* Call to Action */}
-        <div className="mt-16 text-center reveal-up">
-          <div className="bg-zinc-900 rounded-2xl p-8 border-2 border-zinc-800 max-w-2xl mx-auto">
-            <h3 className="text-xl md:text-2xl font-bold font-vsFont text-white mb-4">
-              Want to see more?
-            </h3>
-            <p className="text-stone-300 font-vsFont text-base md:text-lg leading-relaxed mb-6">
-              I'm constantly working on new projects and experimenting with different technologies. 
-              Check out my GitHub for more repositories and ongoing work.
-            </p>
-            <a 
-              href="https://github.com/shwet46" 
-              target="_blank" 
+          {/* Explore More Card */}
+          <div className="reveal-up">
+            <a
+              href="https://github.com/shwet46"
+              target="_blank"
               rel="noopener noreferrer"
-              className="inline-block"
+              className="block h-full group"
             >
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-medium font-vsFont shadow-lg transition-all duration-200">
-                View All Projects
-              </button>
+              <div className="h-full bg-gradient-to-br from-orange-500/10 to-orange-600/10 border border-orange-400/30 rounded-2xl p-8 flex flex-col justify-center items-center text-center transition-all duration-300 hover:border-orange-400/50 hover:scale-[1.02] hover:shadow-2xl hover:shadow-orange-500/10">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Github className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold font-vsFont text-white mb-3 group-hover:text-orange-100">
+                  Explore More Projects
+                </h3>
+                <p className="text-stone-300 text-base leading-relaxed group-hover:text-orange-200 mb-4">
+                  Discover more on GitHub — personal projects, experiments, and playgrounds.
+                </p>
+                <div className="inline-flex items-center gap-2 text-orange-400 font-medium text-sm group-hover:gap-3 transition-all duration-300">
+                  <span>View All Projects</span>
+                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+              </div>
             </a>
           </div>
         </div>
