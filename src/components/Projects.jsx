@@ -24,7 +24,23 @@ const works = [
     desc: 'Takes input of your handwriting image and analyzes your personality trait from the Big Five personality traits.',
     githubLink: 'https://github.com/shwet46/Handwriting-analysis',
     liveLink: 'https://handwriting-analysis-by-sb.streamlit.app/',
+    techStack: ['Tensorflow', 'Streamlit', 'Python'],
+    featured: false
+  },
+   {
+    title: 'Cplusplus.com',
+    desc: "Just revamped and modernized the ugly UI of cplusplus.com from a programmer's perspective. Also added a new problems section.",
+    githubLink: 'https://github.com/shwet46/cplusplus',
+    liveLink: 'https://cplusplus-delta.vercel.app/',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    featured: false
+  },
+   {
+    title: 'shwet46.me',
+    desc: 'This is my personal portfolio, anyways, you are looking at it right now.',
+    githubLink: 'https://github.com/shwet46/My-Portfolio',
+    liveLink: 'https://shwet46.me/',
+    techStack: ['React', 'JavaScript', 'TailwindCSS'],
     featured: false
   }
 ];

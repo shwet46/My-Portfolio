@@ -83,7 +83,7 @@ const ProjectCard = ({
       </div>
 
       {/* Description */}
-      <p className="text-sm md:text-base text-stone-300 font-vsFont leading-relaxed mb-4 line-clamp-4">
+      <p className="text-sm md:text-base text-stone-300 font-vsFont leading-relaxed mb-4 ">
         {desc}
       </p>
 

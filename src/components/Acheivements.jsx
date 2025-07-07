@@ -3,7 +3,7 @@ import { CheckCircle } from 'lucide-react';
 
 const achievements = [
   'Secured 838 rank out of around 21,000 participants in Global LeetCode contest.',
-  'Ranked 2⭐ on CodeChef.',
+  'Got 2⭐ on CodeChef.',
   'Problem statement winner at BBB Hackathon.',
   'Top finalist at levelup hackathon.',
 ];
